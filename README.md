@@ -26,5 +26,8 @@
             3.non-zeroed storage(put any data )
 22. GC(garbage collection) happen automatically
 23. some time we passed on variables the copy is passed on ,so we want to passed on actual values so pointers are used.
+24. array with more features is called slices.
+25.append is used to add data in slices
+
 
 
