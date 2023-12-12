@@ -8,4 +8,4 @@
 7. Basic types: string,bool,integer,floating, complex.
 8. advanced type:array,slices,maps,structs,pointers,function,channel.
 9. TO create a variable used var.
-
+10.First letter capital is mainly we consider as public.

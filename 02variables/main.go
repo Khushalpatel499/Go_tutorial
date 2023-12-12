@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+//jwtToken :=10(not allowed)
+//var anotherValue = 300(allowed)
+
+const LoginToken string = "xfgddffg" //public
+
 func main() {
 	fmt.Println("Variables")
 	var username string = "Khushal"
@@ -25,5 +30,25 @@ func main() {
 	var anotherVariable int
 	fmt.Println(anotherVariable)
 	fmt.Printf("Variable is type of:%T and  value is:%v \n", anotherVariable, anotherVariable)
+
+	var anotherString string
+	fmt.Println(anotherString)
+	fmt.Printf("Variable is type of:%T and  value is:%v \n", anotherString, anotherString)
+
+	var isAnotherLogged bool
+	fmt.Println(isAnotherLogged)
+	fmt.Printf("Variable is type of:%T and  value is:%v \n", isAnotherLogged, isAnotherLogged)
+
+	//implicit type of declaration
+
+	var website = "Khushalpatel.in"
+	fmt.Println(website)
+
+	//no var style
+
+	numberOfUser := 5
+	fmt.Println(numberOfUser)
+
+	fmt.Println(LoginToken)
 
 }
