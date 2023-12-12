@@ -17,3 +17,14 @@
 16. panic() : end the program for handle err in code.
 17. build .exe file or other system by GOOS="darwin" go bulid 
 18.Memory allocation and deallocation is happen automatically
+19. There are two methods :1.new() and 2. make()
+20. new():  1.Allocate memory but not init
+            2.you will get a memory address
+            3.zeroed storage(can't put any data initially)
+21. make(): 1.Allocate memory and init
+            2.you will get a memory address
+            3.non-zeroed storage(put any data )
+22. GC(garbage collection) happen automatically
+23. some time we passed on variables the copy is passed on ,so we want to passed on actual values so pointers are used.
+
+
