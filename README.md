@@ -13,4 +13,6 @@
 12. bufio.NewReader(os.Stdin)
 13. comma ok || err err for handle err or input(input, _)
 14. for input : input, _ and for error: _ ,err
+15. strconv. (conver string into number)
+16. panic() : end the program for handle err in code.
 
