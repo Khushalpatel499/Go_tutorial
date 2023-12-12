@@ -9,3 +9,8 @@
 8. advanced type:array,slices,maps,structs,pointers,function,channel.
 9. TO create a variable used var.
 10.First letter capital is mainly we consider as public.
+11.for reading we used two library bufio and os
+12. bufio.NewReader(os.Stdin)
+13. comma ok || err err for handle err or input(input, _)
+14. for input : input, _ and for error: _ ,err
+
