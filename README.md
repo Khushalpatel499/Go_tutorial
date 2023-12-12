@@ -15,4 +15,5 @@
 14. for input : input, _ and for error: _ ,err
 15. strconv. (conver string into number)
 16. panic() : end the program for handle err in code.
-
+17. build .exe file or other system by GOOS="darwin" go bulid 
+18.Memory allocation and deallocation is happen automatically
