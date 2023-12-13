@@ -34,5 +34,6 @@
 29. The defer keyword is basically whatever we execute is execute line by line but by use of defer that line execute at the very end.They are lifo(last in first out)
 30. panic() sutdown the excecution and show what error is coming
 31. http is fastest to handle webrequest in go lang.
+32. & is like a comma in url world.
 
 
