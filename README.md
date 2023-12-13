@@ -29,6 +29,7 @@
 24. array with more features is called slices.
 25.append is used to add data in slices
 26.no inheritance in golang
+27.Function inside function not allowed
 
 
 
