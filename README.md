@@ -30,6 +30,7 @@
 25.append is used to add data in slices
 26.no inheritance in golang
 27.Function inside function not allowed
+28.when function are used in struct called methods
 
 
 
