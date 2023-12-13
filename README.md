@@ -35,5 +35,7 @@
 30. panic() sutdown the excecution and show what error is coming
 31. http is fastest to handle webrequest in go lang.
 32. & is like a comma in url world.
+33.interface alternate of struct.
+34. omitempty if field is empty don't through the field
 
 
