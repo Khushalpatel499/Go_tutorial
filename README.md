@@ -31,6 +31,8 @@
 26.no inheritance in golang
 27.Function inside function not allowed
 28.when function are used in struct called methods
+29. The defer keyword is basically whatever we execute is execute line by line but by use of defer that line execute at the very end.They are lifo(last in first out)
+30. panic() sutdown the excecution and show what error is coming
 
 
 
