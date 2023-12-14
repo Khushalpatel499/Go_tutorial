@@ -15,7 +15,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const connectionString = "mongodb+srv://Khushal:Khushal4989@@cluster0.azvsa3r.mongodb.net/?retryWrites=true&w=majority"
+const connectionString = "mongodb+srv://khushal:Khushal4989@cluster0.xirtede.mongodb.net/?retryWrites=true&w=majority"
 const dbName = "netflix"
 const colName = "watchlist"
 
@@ -53,12 +53,12 @@ func insertOneMovie(movie model.Netflix) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Inserted 1 movie in db with id:", inserted.InsertedId)
+	fmt.Println("Inserted 1 movie in db with id:", inserted.InsertedID)
 }
 
 // update one record
 func updateOneMovie(movieId string) {
-	id, _ := primitive.ObjectIdFromHex(movieId)
+	id, _ := primitive.ObjectIDFromHex(movieId)
 	filter := bson.M{"_id": id}
 	update := bson.M{"$set": bson.M{"watched": true}}
 
