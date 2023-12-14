@@ -15,15 +15,15 @@ import (
 
 // model for course -file
 type Course struct {
-	CourseId    string  `json:courseid`
-	CourseName  string  "json:coursename"
-	CoursePrice int     `json:price`
-	Author      *Author `json:author`
+	CourseId    string  `json:"courseid"`
+	CourseName  string  `json:"coursename"`
+	CoursePrice int     `json:"price"`
+	Author      *Author `json:"author"`
 }
 
 type Author struct {
-	FullName string `json:"fullname`
-	Website  string `json:website`
+	FullName string `json:"fullname"`
+	Website  string `json:"website"`
 }
 
 //fake DB
@@ -54,7 +54,7 @@ func main() {
 	r.HandleFunc("/course/{id}", getOnecourse).Methods("GET")
 	r.HandleFunc("/course", createOneData).Methods("POST")
 	r.HandleFunc("/course/{id}", updateOneCourse).Methods("PUT")
-	r.HandleFunc("/course", deleteOneCourse).Methods("DELETE")
+	r.HandleFunc("/course/{id}", deleteOneCourse).Methods("DELETE")
 
 	//listen to a port
 	log.Fatal(http.ListenAndServe(":4000", r))
@@ -114,6 +114,8 @@ func createOneData(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode("No Data inside the Json")
 		return
 	}
+	// TODO: check only if title is duplicate
+	// idea : loop, title match with course.coursename
 
 	//generate new id ,and convert into string
 	//add new course into courses
@@ -157,6 +159,7 @@ func deleteOneCourse(w http.ResponseWriter, r *http.Request) {
 	for index, course := range courses {
 		if course.CourseId == params["id"] {
 			courses = append(courses[:index], courses[index+1:]...)
+			//TODO : Send a confirm response
 			json.NewEncoder(w).Encode("This course is removed")
 			break
 		}
