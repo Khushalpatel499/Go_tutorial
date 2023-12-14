@@ -38,5 +38,7 @@
 33.interface alternate of struct.
 34. omitempty if field is empty don't through the field
 35.gorilla mux a routing system. command : go get -u github.com/gorilla/mux
+36.work with mongo driver: go get go.mongodb.org/mongo-driver/mongo
+37. In root directory always one .go file
 
 
