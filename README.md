@@ -37,6 +37,6 @@
 32. & is like a comma in url world.
 33.interface alternate of struct.
 34. omitempty if field is empty don't through the field
-35.gorilla mux a routing system.
+35.gorilla mux a routing system. command : go get -u github.com/gorilla/mux
 
 
